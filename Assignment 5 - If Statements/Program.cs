@@ -6,6 +6,7 @@
         {
             double weight;
             string planet;
+            int secretNumber = 6, guess;
 
             // Space Boxing
             Console.WriteLine("Hello, Julio Cesar Chavez Mark VII!");
@@ -55,8 +56,13 @@
                 weight = Math.Round(weight * 1.23, 2);
                 Console.WriteLine("Your weight on Neptune would be " + weight + " pounds");
             }
+            Console.WriteLine();
 
             // Worst guessing game ever
+            Console.WriteLine("Let's play a game!");
+            Console.WriteLine("I chose a number between 1 and 10, can you guess it?");
+            guess = Console.ReadLine();
+
         }
     }
 }

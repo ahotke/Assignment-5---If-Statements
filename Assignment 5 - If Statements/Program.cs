@@ -156,7 +156,14 @@
 
             scorePercentage = ((double)score / 4) * 100;
 
-            Console.WriteLine("You got a score of " + score + "/4. That is " + scorePercentage + "%.");
+            if (score == 4)
+                Console.WriteLine("Congratulations! You got everything right and aced the quiz!");
+
+            else if (score == 0)
+                Console.WriteLine("You got everything wrong. Disappointing");
+
+            else
+                Console.WriteLine("You got a score of " + score + "/4. That is " + scorePercentage + "%.");
 
 
 
